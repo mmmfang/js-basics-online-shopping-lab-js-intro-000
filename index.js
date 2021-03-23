@@ -27,8 +27,8 @@ function viewCart() {
   } else if (cart.length === 2) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
   } else {
+    var tempArray=[];
     for (let i=0; i < cart.length; i++) {
-      var tempArray=[];
       tempArray.push(`${cart[i].itemName} at ${cart[i].itemPrice}`);
       let ending = ` and ${cart[-1].itemName} at $${cart[-1].itemPrice}.`
     } return `In your cart, you have ${tempArray.join(`, `)}${ending}.`
