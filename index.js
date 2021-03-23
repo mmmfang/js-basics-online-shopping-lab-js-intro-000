@@ -41,7 +41,6 @@ function total() {
   var newTotal;
   for (let i = 0; i < cart.length; i++) {
     newTotal += cart[i].itemPrice;
-
   } return newTotal;
 }
 
