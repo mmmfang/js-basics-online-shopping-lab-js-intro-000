@@ -31,7 +31,7 @@ function viewCart() {
     for (let i=0; i < cart.length; i++) {
       tempArray.push(`${cart[i].itemName} at ${cart[i].itemPrice}`);
       //let ending = ` and ${cart[-1].itemName} at $${cart[-1].itemPrice}.`
-    } return `In your cart, you have ${tempArray.join(`, `)}${ending}.`
+    } return `In your cart, you have ${tempArray.join(`, `)}.`
   }
 }
 
