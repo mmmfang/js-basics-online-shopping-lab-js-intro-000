@@ -15,6 +15,7 @@ function addToCart(item) {
    itemName: item,
    itemPrice: price
  }
+ return newObj;
 }
 
 function viewCart() {
