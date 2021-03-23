@@ -62,6 +62,6 @@ function placeOrder(cardNumber) {
     let priceTotal = total();
     let creditCard = cardNumber;
     cart = [];
-    return `Your total cost is $${priceTotal}, which will be charged to card ${creditCard}. `
+    return `Your total cost is $${priceTotal}, which will be charged to the card ${creditCard}. `
   }
 }
