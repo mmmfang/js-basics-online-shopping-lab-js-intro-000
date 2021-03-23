@@ -15,7 +15,7 @@ function addToCart(item) {
    itemName: item,
    itemPrice: price
  }
- return newObj;
+ return `${newObj.itemName} has been added to your cart.`
 }
 
 function viewCart() {
