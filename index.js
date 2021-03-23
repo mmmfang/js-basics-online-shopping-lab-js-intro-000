@@ -54,14 +54,24 @@ function removeFromCart(item) {
 }
 
 
+// function placeOrder(cardNumber) {
+//   if (!cardNumber) {
+//     return `Sorry, we don't have a credit card on file for you.`
+//   }
+//   //if (cardNumber) {
+//     let priceTotal = total();
+//     //let creditCard = cardNumber;
+//     cart = [];
+//     return `Your total cost is $${priceTotal}, which will be charged to the card ${cardNumber}. `
+// //  }
+// }
 function placeOrder(cardNumber) {
-  if (!cardNumber) {
-    return `Sorry, we don't have a credit card on file for you.`
-  }
-  //if (cardNumber) {
-    let priceTotal = total();
-    //let creditCard = cardNumber;
-    cart = [];
-    return `Your total cost is $${priceTotal}, which will be charged to the card ${cardNumber}. `
-//  }
+  // write your code here
+if (cardNumber === undefined) {
+  return "Sorry, we don't have a credit card on file for you."
+} else {
+  const total1 = total()
+  cart = []
+  return `Your total cost is $${total1}, which will be charged to the card ${cardNumber}.`
+}
 }
