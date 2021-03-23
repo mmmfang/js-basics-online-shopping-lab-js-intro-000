@@ -29,9 +29,9 @@ function viewCart() {
   } else {
     for (let i=0; i < cart.length; i++) {
       let statement = `${cart[i].itemName} at ${cart[i].itemPrice}`;
-      //let ending = ` and ${cart[-1].itemName} at $${cart[-1].itemPrice}.`
-    }
-  } return `In your cart, you have ${statement}${ending}.`
+      let ending = ` and ${cart[-1].itemName} at $${cart[-1].itemPrice}.`
+    } return `In your cart, you have ${statement}${ending}.`
+  }
 }
 
 function total() {
