@@ -32,7 +32,7 @@ function viewCart() {
       tempArray.push(`${cart[i].itemName} at ${cart[i].itemPrice}`);
     } tempArray.pop();
       let ending = ` and ${cart[-1].itemName} at $${cart[-1].itemPrice}.`
-    return `In your cart, you have ${tempArray.join(`, `)}.`
+    return `In your cart, you have ${tempArray.join(`, `)}${ending}}.`
   }
 }
 
