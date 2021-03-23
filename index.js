@@ -38,11 +38,11 @@ function viewCart() {
 }
 
 function total() {
+  var newTotal;
   for (let i = 0; i < cart.length; i++) {
-    var newTotal;
     newTotal += cart[i].itemPrice;
-    return newTotal;
-  }
+
+  } return newTotal;
 }
 
 function removeFromCart(item) {
