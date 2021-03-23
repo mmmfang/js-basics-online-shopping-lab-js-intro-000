@@ -30,9 +30,9 @@ function viewCart() {
     var tempArray=[];
     for (let i=0; i < cart.length; i++) {
       tempArray.push(`${cart[i].itemName} at ${cart[i].itemPrice}`);
-    } tempArray.pop();
+     tempArray.pop();
       let ending = ` and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
-    return `In your cart, you have ${tempArray.join(`, `)}${ending}.`
+    }return `In your cart, you have ${tempArray.join(`, `)}${ending}.`
   }
 }
 
